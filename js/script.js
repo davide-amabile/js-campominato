@@ -3,7 +3,7 @@
   var numCpu = numRdnFrom1(1, 2);
   console.log(numCpu);
 // }
-number = 2;
+number = 10;
 
 var controllo = checkNum(numCpu, number );
 console.log(controllo)
@@ -22,11 +22,8 @@ function numRdnFrom1 (min, max) {
 
 // funzione controllo numero
 function checkNum (str, num) {
-  var lista = [str];
-  console.log(lista);
+  var lista = str;
   var numero = num;
-  console.log(num);
   var check = lista.includes(numero);
-  console.log(check);
   return check;
 }
