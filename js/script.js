@@ -3,14 +3,20 @@
   console.log(bomba);
 
 // chiedere all'utente di inserire 16 numeri se il numero è uguale ad un numero random ha perso se no continuare
-  // var numUtente = [];
-  //
-  // var i = 0;
-  // while ( i < 5 ) {
-  //   var numIns = parseInt(prompt("Inserire un numero");
-  //
-  //   i++;
-  // }
+  var numUtente = [];
+
+  var i = 0;
+  while ( i < 5 ) {
+    var numIns = parseInt(prompt("Inserire un numero"));
+    if ( bomba.indexOf(numIns) === -1) {
+      numUtente.push(numIns);
+    } else {
+      alert("hai perso");
+      break
+    }
+    i++;
+  }
+  console.log(numUtente);
 
 
 
